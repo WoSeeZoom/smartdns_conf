@@ -14,7 +14,7 @@ download_files() {
 
 delete_tmp_file(){
     if [ -f /tmp/smartdns/domain-set/ ]; then
-        rm /tmp/smartdns/domain-set/;
+        rm -rf /tmp/smartdns/domain-set/
         echo "/tmp/smartdns/domain-set/文件夹删除成功"
     fi
 }
